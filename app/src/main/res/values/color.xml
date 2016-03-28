@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="light_blue_main">#ff283158</color>
+    <color name="light_blue_main1">#ff3b5998</color>      <!-- facebook 的主题颜色 -->
+    <color name="light_blue_main2">#ff1ca9a6</color>
+    <color name="light_white">#11ffffff</color>
+    <color name="light_gray">#05000000</color>
+    <color name="green">#ff179536</color>
+    
+</resources>

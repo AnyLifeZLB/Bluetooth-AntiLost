@@ -1,16 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="ble.bipbip.com.bluetoothantilost.MainActivity">
+    android:fitsSystemWindows="true"
+    android:gravity="right"
+    tools:context="com.csst.wechat.MainActivity" >
+    
+    
+    
 
-    <TextView
-        android:layout_width="wrap_content"
+    
+    <RelativeLayout
+        android:id="@+id/tips_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:background="#99eff158"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/img_ico"
+            android:layout_width="22dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:paddingStart="5dp"
+            android:duplicateParentState="true"
+            android:src="@drawable/ico_tips" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:duplicateParentState="true"
+            android:paddingLeft="7dp"
+            android:layout_toRightOf="@id/img_ico"
+            android:singleLine="true"
+            android:text="最遥远的距离就是她在那，你却没有网络"
+            android:textColor="#cc333333"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="fill_parent"
+            android:duplicateParentState="true"
+            android:gravity="end"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/arrowlv" />
+
+    </RelativeLayout>
+    
+   <com.bipbip.customview.CustomRadioGroup 
+        android:id="@+id/main_footer"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentBottom="true"
+        ></com.bipbip.customview.CustomRadioGroup>
+    
+    <ImageView 
+        android:id="@+id/tabline"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/main_footer"  
+        android:background="#88111111"
+        />
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabline"
+        android:layout_below="@id/tips_layout"
+        ></android.support.v4.view.ViewPager>
 </RelativeLayout>

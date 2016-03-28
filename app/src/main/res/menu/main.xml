@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mywinxintest.MainActivity" >
+    
+    <item
+        android:id="@+id/main_menu"
+        android:icon="@drawable/action_more"
+        android:showAsAction="always"
+        android:title="more"
+        />
+	
+</menu>

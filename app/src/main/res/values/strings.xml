@@ -1,3 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">BluetoothAntilost</string>
+
+    <string name="app_name">BT Anti-lost</string>
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="double_return_exit">Press again to quit</string>
+    
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    
+    <string name="device_live_start">Start Living</string>
+    <string name="device_live_stop">Stop Living</string>
+    
 </resources>
