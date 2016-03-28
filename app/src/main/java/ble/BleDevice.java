@@ -4,7 +4,6 @@ package ble;
  * 
  * 
  * @author Anylife.zlb@gmail.com
- *
  */
 public class BleDevice {
 	

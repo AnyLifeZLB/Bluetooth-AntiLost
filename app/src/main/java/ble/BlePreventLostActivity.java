@@ -80,7 +80,6 @@ public class BlePreventLostActivity extends BaseActivity implements OnClickListe
             Toast.makeText(this, R.string.ble_not_supported, Toast.LENGTH_SHORT).show();
             finish();
         }
-   
         // Initializes a Bluetooth adapter.  For API level 18 and above, get a reference to
         // BluetoothAdapter through BluetoothManager.
         final BluetoothManager bluetoothManager =(BluetoothManager) getSystemService(Context.BLUETOOTH_SERVICE);
@@ -92,11 +91,8 @@ public class BlePreventLostActivity extends BaseActivity implements OnClickListe
             finish();
             return;
         }
-        
         Log.e(TAG, " test" + BleDeviceState.UNKNOW.getStateName());
-        
         findDevice(true);
-            
     }
      
     
@@ -210,21 +206,16 @@ public class BlePreventLostActivity extends BaseActivity implements OnClickListe
      * @param needReScan
      */
     private void setInstructStytle(boolean needReScan){
-    	
     	if(needReScan){
         	instruction_tips.setVisibility(View.INVISIBLE);
         	mDeviceListAdapter.clear(); 
     	}else{//要那种慢慢显示出来的效果
         	instruction_tips.setVisibility(View.VISIBLE);
     	}
-    	    
     }
-    
-    
-    
+
     public class DeviceLiveThread extends Thread {
     	private boolean isRunning=true;
-    	
     	private void stopThread(){
     		isRunning=false;
     	}
@@ -264,13 +255,10 @@ public class BlePreventLostActivity extends BaseActivity implements OnClickListe
         				e.printStackTrace();
         			}
     			}
-
     		}	
     	}
     }
-    
-    
-    
+
     /**
      * 开始进入
      * 
@@ -320,8 +308,7 @@ public class BlePreventLostActivity extends BaseActivity implements OnClickListe
 			}
 		});
     }
-    
-    
+
     
     /**
      * 停止
@@ -330,10 +317,7 @@ public class BlePreventLostActivity extends BaseActivity implements OnClickListe
     private void stopDeviceLiving(){
     	
     }
-    
-    
-    
-    
+
     //======================================================================================
     
 	@Override

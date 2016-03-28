@@ -17,7 +17,6 @@ public class BlePreventLostCore {
 	private final  static int leastNum=3; // 设备采集到的SSID[] size>3才是有意义的值
 	private final  static double deviateBaseFlag=0.1; //
 	private final  static double WCF=0.5;         //Weight Compensation Flag,权重补偿因子
-	
 
 	private static Map<String,List<Integer>> sacnedBleDevicesData;
 	/**

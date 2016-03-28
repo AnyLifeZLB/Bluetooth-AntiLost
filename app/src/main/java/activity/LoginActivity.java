@@ -16,16 +16,12 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.ble.antilost.R;
-
 import main.BaseActivity;
-
 
 /**
  *   
  *  @author liubao.zeng
- *
  */   
 public class LoginActivity extends BaseActivity implements OnClickListener,OnLongClickListener {
 	// 声明控件对象

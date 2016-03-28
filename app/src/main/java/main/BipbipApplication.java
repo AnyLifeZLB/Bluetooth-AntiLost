@@ -9,7 +9,7 @@ import android.util.Log;
 
 /**
  * 
- * @author  liubao.zeng
+ * @author  anylife.zlb@gmail.com
  * @time    2012-11-20
  *     
  */  
@@ -27,15 +27,6 @@ public class BipbipApplication extends Application{
 	public void onCreate(){
 		super.onCreate();
 		Log.e("Application","Application onCreate !");
-						
-		
-		//BuildConfig.DEBUG 需要验证BuildConfig.DEBUG是否有效
-//	    if(BuildConfig.DEBUG){
-//			CrashReport.initCrashReport(this, "900008898", false);   //调试模式关闭CrashReport
-//	    }
-		
-//		Logger.init().
-
 		instance = this;	
 	}  
 	
